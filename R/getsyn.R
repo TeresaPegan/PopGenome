@@ -45,7 +45,7 @@ erg <- apply(matrix,2,function(vek){
     cc   <- codontable()
     id65 <- which(uniquevek==65) # gap or unknown position
     if(length(id65)>0){vek  <- uniquevek[-id65]}
-    tt   <- unique(cc$Protein[1,vek]) # Standard Codierung
+    tt   <- unique(cc$Protein[2,vek]) # Standard Codierung
     size <- length(tt)
    
     if(size==1){
